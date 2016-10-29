@@ -17,7 +17,10 @@
 <a name="elicitation"/>
 ###**1. Brief description of Requirements Elicitation**
 
+The development of Flask is made in a really simple and opened way. The big community that exists around Flask (???????) and the core of developers are the main responsible by the resolution of the issues and the implementation of the defined requirements as well as propose and introduce new ones. 
 
+//TODO
+How those the proposal of a new requirement works?
 
 
 
