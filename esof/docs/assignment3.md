@@ -1,3 +1,5 @@
+![FEUP image](https://sigarra.up.pt/feup/pt/WEB_GESSI_DOCS.download_file?p_name=F-370784536/logo_cores_oficiais.jpg)
+#**Software Design**
 
 ##**Integrated Masters in Informatics and Computer Engineering**
 
@@ -13,23 +15,34 @@
 6. [Group Contribution](#contribution)
 
 <a name="introduction"/>
-### Introduction
+###1. Introduction
+  Software architecture deals with the design and implementation of the high-level structure of the softwarre. It is the result of assembling a certain number of architectural elements in some well-chosen forms to satisfy the major functionality and performance requirements of the system, as well as some other, non-functional requirements such as reliability, scalability, portability and avialbility.
+
+
+
+
+* Logical view:
+* Development view:
+* Deployment view: 
+* Process view
+  
+
 
 <a name="logicalView"/>
-### Logical View
+###2. Logical View
 
 <a name="developmentView"/>
-### Development View
+###3. Development View
 
 <a name="deploymentView"/>
-### Deployment View
+###4. Deployment View
 
 <a name="processView"/>
-### Process View
+###5. Process View
 
 
 <a name="contribution"/>
-##**Group Contribution**
+###6. Group Contribution
 |Name|Number|Contribution|
 | :---: | :---: |:---: |
 |José Oliveira|up201406208||
