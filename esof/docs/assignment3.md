@@ -43,13 +43,15 @@
 
 <a name="deploymentView"/>
 ##Deployment View
-
+  <p align="center">
+    <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Deployment Model.png">
+  </p>
 <a name="processView"/>
 ##Process View
 
 
 <a name="contribution"/>
-##6. Group Contribution
+##Group Contribution
 |Name|Number|Contribution|
 | :---: | :---: |:---: |
 |José Oliveira|up201406208||
