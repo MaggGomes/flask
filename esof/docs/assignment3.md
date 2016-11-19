@@ -9,6 +9,7 @@
 ##**Index**
 1. [Intoduction](#introduction)
   * [4+1 Architectural  View Model](#4+1viewmodel)
+  * [Architectural Patterns in Flask](#patterns)
 2. [Logical View](#logicalView)
 3. [Development View](#developmentView)
 4. [Deployment View](#deploymentView)
@@ -28,21 +29,28 @@
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/model.png">
   </p>
   
-* ***Logical view***: concerned with the functionality that the system provides to end-users; 
-* ***Development view***: illustrates a system from a programmer's perspective and is concerned with software management;
-* ***Deployment view***: depicts the system from a system engineer's point of view. It is concerned with the topology of software components on the physical layer as well as the physical connections between these components;
-* ***Process view***: deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the runtime behavior of the system;
-* ***Use case view or Scenarios***: describes sequences of interactions between objects and between processes. They are used to identify architectural elements and to illustrate and validate the architecture design.
+* ***Logical View***: concerned with the functionality that the system provides to end-users; 
+* ***Development View***: illustrates a system from a programmer's perspective and is concerned with software management;
+* ***Deployment View***: depicts the system from a system engineer's point of view. It is concerned with the topology of software components on the physical layer as well as the physical connections between these components;
+* ***Process View***: deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the runtime behavior of the system;
+* ***Use case View or Scenarios***: describes sequences of interactions between objects and between processes. They are used to identify architectural elements and to illustrate and validate the architecture design.
   
 ####Relationships between Views
 
-  The Logical View and the Process View are at a conceptual level and are used from analysis to design. The Implementation View and the Deployment View are at the physical level and represent the actual application components built and deployed.
+  The Logical View and the Process View are at a conceptual level and are used from analysis to design. The Development View and the Deployment View are at the physical level and represent the actual application components built and deployed.
 
 
-The Logical View and the Implementation View are tied closer to functionality. They depict how functionality is modeled and implemented. The Process View and Deployment View realizes the non-functional aspects using behavioral and physical modeling.
+The Logical View and the Development View are tied closer to functionality. They depict how functionality is modeled and implemented. The Process View and Deployment View realizes the non-functional aspects using behavioral and physical modeling.
 
 
 Use Case View leads to structural elements being analyzed in the Logical View and implemented in the Development View. The scenarios in the Use Case View are realized in the Process View and deployed in the Physical View.
+
+<a name="patterns"/>
+###Architectural Patterns in Flask
+Although Flask is an open-source project, and because of that without a clearly estabilished project management, we can see some traces of architectural patterns. The most notorious is Inversion of Control.
+
+Inversion of Control is a design principle in which custom-written portions of a computer receive the flow of control from a generic framework. A software architecture with this design inverts control as compared to traditional procedural programming: in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks, but with inversion of control, it is the framework that calls into the custom, or task-specific, code.
+Inversion of control is used to increase modularity of the program and make it extensible, which is a very important feature of Flask.
 
 <a name="logicalView"/>
 ##Logical View
