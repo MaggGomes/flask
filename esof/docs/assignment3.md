@@ -61,7 +61,7 @@ Inversion of control is used to increase modularity of the program and make it e
 There are only two packages on flask:
 
  * flask - contains the the essencial parts of the framework.
-	* ext -  redirect imports for extensions.
+ * ext -  redirect imports for extensions.
 
 The flask package  was taken in more detail in order to provide a better explanation of the framework.
 
@@ -82,12 +82,12 @@ The next diagram represent the  framework from a programmer's perspective.
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Development Model.png">
   </p>
 From the diagram above is possible to understand that flask  combines almost all component to delivery a unified solution to developer.
-But the WSGI is external  to flask, its used a Werkeug lib to connect flask applications to WSGI.
+But the WSGI is external  to Flask, its used a Werkeug lib to connect flask applications to WSGI.
 
 <a name="deploymentView"/>
 ##Deployment View
 
-The diagram bellow represents flask from a system engineer's point of view.
+The diagram bellow represents Flask from a system engineer's point of view.
 
   <p align="center">
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Deployment Model.png">
@@ -108,8 +108,8 @@ For deployment it's needed a server. Also, need to have WSGI werkzeug  compatibi
 ##Group Contribution
 |Name|Number|Contribution|
 | :---: | :---: |:---: |
-|José Oliveira|up201406208||
-|Manuel Gomes|up201402679||
-|Marcelo Ferreira|up201405323||
-|Pedro Dias|up201404178||
+|José Oliveira|up201406208|25%|
+|Manuel Gomes|up201402679|25%|
+|Marcelo Ferreira|up201405323|25%|
+|Pedro Dias|up201404178|25%|
 
