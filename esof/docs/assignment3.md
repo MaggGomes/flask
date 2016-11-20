@@ -75,6 +75,9 @@ The flask package  was taken in more detail in order to provide a better explana
 
 <a name="developmentView"/>
 ##Development View
+
+The next diagram represent the  framework from a programmer's perspective.
+
   <p align="center">
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Development Model.png">
   </p>
@@ -83,6 +86,9 @@ But the WSGI is external  to flask, its used a Werkeug lib to connect flask appl
 
 <a name="deploymentView"/>
 ##Deployment View
+
+The diagram bellow represents flask from a system engineer's point of view.
+
   <p align="center">
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Deployment Model.png">
   </p>
