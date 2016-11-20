@@ -57,7 +57,9 @@ Inversion of control is used to increase modularity of the program and make it e
 
 <a name="developmentView"/>
 ##Development View
-
+  <p align="center">
+    <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Development Model.png">
+  </p>
 <a name="deploymentView"/>
 ##Deployment View
   <p align="center">
