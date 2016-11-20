@@ -77,7 +77,9 @@ For deployment it's needed a server. Also, need to have WSGI werkzeug  compatibi
  
 <a name="processView"/>
 ##Process View
-
+<p align="center">
+    <img src="https://raw.githubusercontent.com/rodavoce/flask/master/esof/res/process_view.png">
+  </p>
 
 <a name="contribution"/>
 ##Group Contribution
