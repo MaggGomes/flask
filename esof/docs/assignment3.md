@@ -63,11 +63,18 @@ Inversion of control is used to increase modularity of the program and make it e
   <p align="center">
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Development Model.png">
   </p>
+From the diagram above is possible to understand that flask  combines almost all component to delivery a unified solution to developer.
+But the WSGI is external  to flask, its used a Werkeug lib to connect flask applications to WSGI.
+
 <a name="deploymentView"/>
 ##Deployment View
   <p align="center">
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/Deployment Model.png">
   </p>
+For deployment it's needed a server. Also, need to have WSGI werkzeug  compatibility  to deploy application on server.
+ The end-user to access the service just need a browser and internet connection.
+ There is no limit's in server number or database number, the efficiency on this scalability is dependent on application implementation.
+ 
 <a name="processView"/>
 ##Process View
 
