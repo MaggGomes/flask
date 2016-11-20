@@ -101,6 +101,8 @@ For deployment it's needed a server. Also, need to have WSGI werkzeug  compatibi
 <p align="center">
     <img src="https://raw.githubusercontent.com/rodavoce/flask/master/esof/res/process_view.png">
   </p>
+  
+  Defines the diferent interactions between the system's processes, at run-time. For the main components of the application the previous modelation is used.
 
 <a name="contribution"/>
 ##Group Contribution
