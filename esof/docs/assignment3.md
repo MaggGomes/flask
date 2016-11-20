@@ -57,6 +57,21 @@ Inversion of control is used to increase modularity of the program and make it e
   <p align="center">
     <img src="https://github.com/rodavoce/flask/blob/development/esof/res/logicalView.PNG">
   </p>
+  
+There are only two packages on flask:
+
+ * flask - contains the the essencial parts of the framework.
+	* ext -  redirect imports for extensions.
+
+The flask package  was taken in more detail in order to provide a better explanation of the framework.
+
+ * sessions - Implements cookie based sessions based on itsdangerous.
+ * debugHelpers - Various helpers to make the development experience better.
+ * app -  This module implements the central WSGI application object.
+ * cli - A simple command line application to run flask apps.
+ * exthook -  Redirect imports for extensions.
+ * templating - Implements the bridge to Jinja2.
+ * views - This module provides class-based views inspired by the ones in Django.  
 
 <a name="developmentView"/>
 ##Development View
