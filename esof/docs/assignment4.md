@@ -70,14 +70,25 @@ The automatic test were implemented using python test framework, this tests cove
 
 They test modules behaviour and compatibility with external libraries like Jinja2 and Werke  allowing to have the guarantee of an expected behaviour in the most common uses of this framework.
 
-Thanks to "tox", a testing for python, the test run in multiple versions of python from 2 to current version, ensuring framework compatibility.
+Thanks to "tox", a testing tool for python, the test run in multiple versions of python from 2 to current version, ensuring framework compatibility.
 
+Tests resutl:
+* Number of test: 309
+* Passed tests: 299
+* Skipped test: 10
+
+
+<p align="center">
+   <img src="https://github.com/rodavoce/flask/blob/development/esof/res/coverage.png">
+</p>
 The coverage is satisfying , around 86%, allowing development and the launch of new features  with security.
 
 
+<p align="center">
+   <img src="https://github.com/rodavoce/flask/blob/development/esof/res/coverageChart.png">
+</p>
 
-
-
+From the chart above its possible to see that only three modules are bellow 80% and the main reason it's that to increase the coverage will need many specific test how will require a considerable amount of time. The client module has a low percentage because the current tests weren't update to current client version.
 
 <a name="bug"/>
 ##Identify a new bug and correct a bug
