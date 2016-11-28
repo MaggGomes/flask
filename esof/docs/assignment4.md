@@ -65,15 +65,15 @@ Several techniques can be used in ***Verification and Validation*** being the fo
 ##Report Test Statistics and analytics
 
 
-The automatic test were implemented using python test framework, this tests covers all Flask modules.
+The automatic tests were implemented using ***Python*** test framework, which covers all ***Flask*** modules.
 
 
-They test modules behaviour and compatibility with external libraries like Jinja2 and Werke  allowing to have the guarantee of an expected behaviour in the most common uses of this framework.
+The implemented tests verifies the modules behaviour and compatibility with external libraries like ***Jinja2*** and ***Werkezeug***,  allowing to have the guarantee of an expected behaviour in the most common uses of this framework.
 
-Thanks to "tox", a testing tool for python, the test run in multiple versions of python from 2 to current version, ensuring framework compatibility.
+Thanks to ***Tox***, a testing tool for ***Python***, becomes possible to run the tests in several ***Python*** versions from *2.x* to *3.x*, ensuring framework compatibility.
 
-Tests resutl:
-* Number of test: 309
+**Tests results**:
+* Number of tests: 309
 * Passed tests: 299
 * Skipped test: 10
 
@@ -81,14 +81,14 @@ Tests resutl:
 <p align="center">
    <img src="https://github.com/rodavoce/flask/blob/development/esof/res/coverage.png">
 </p>
-The coverage is satisfying , around 86%, allowing development and the launch of new features  with security.
+The coverage is satisfying , with a global result of 86% of the tests passing, allowing development and the launch of new features  with some security.
 
 
 <p align="center">
    <img src="https://github.com/rodavoce/flask/blob/development/esof/res/coverageChart.png">
 </p>
 
-From the chart above its possible to see that only three modules are bellow 80% and the main reason it's that to increase the coverage will need many specific test how will require a considerable amount of time. The client module has a low percentage because the current tests weren't update to current client version.
+From the chart above it's possible to see that only three modules are bellow 80%, showing once again the reasonable coverage of ***Flask***. From our analysis, the modules in these circunstancies are harder to develop tests for them, because they require a lot of specific tests, resulting in a considerable amount of time to develop them. The client module has a low percentage coverage because the current tests weren't update to current client version.
 
 <a name="bug"/>
 ##Identify a new bug and correct a bug
