@@ -64,6 +64,21 @@ Several techniques can be used in ***Verification and Validation*** being the fo
 <a name="staticsAndAnalytics"/>
 ##Report Test Statistics and analytics
 
+
+The automatic test were implemented using python test framework, this tests covers all Flask modules.
+
+
+They test modules behaviour and compatibility with external libraries like Jinja2 and Werke  allowing to have the guarantee of an expected behaviour in the most common uses of this framework.
+
+Thanks to "tox", a testing for python, the test run in multiple versions of python from 2 to current version, ensuring framework compatibility.
+
+The coverage is satisfying , around 86%, allowing development and the launch of new features  with security.
+
+
+
+
+
+
 <a name="bug"/>
 ##Identify a new bug and correct a bug
 
