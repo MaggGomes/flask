@@ -8,7 +8,7 @@
 <a name="index"/>
 ##**Index**
 1. [Introduction](#introduction)
-2. [Software Testability and Reviews](#discuss)
+2. [Software Testability](#discuss)
  * [Controllability](#controllability)
  * [Observability](#observability)
  * [Isolateability](#isolateability)
@@ -40,30 +40,41 @@ Several techniques can be used in ***Verification and Validation*** being the fo
    * Simulation.
    
 <a name="discuss"/>
-##Software Testability and Reviews
+##Software Testability
+Software testability is the degree to which a software artifact supports testing in a given test context. If the testability of the software artifact is high, then finding faults in the system, if it has any, by means of testing is easier.
+Testability is not an intrinsic property of a software artifact and can not be measured directly. Instead, testability is an extrinsic property which results from interdependency of the software to be tested and the test goals, test methods used, and test resources.
 
+A lower degree of testability results in increased test effort. In extreme cases, a lack of testability may hinder testing parts of the software or software requirements at all.
+
+In order to link the testability with the difficulty to find potential faults in a system (if they exist) by testing it, a relevant measure to assess the testability is how many test cases are needed in each case to form a complete test suite. If this size is small, then the testability is high.
 
 <a name="controllability"/>
 ###Controllability
+* The degree to which it is possible to control the state of the component under test as required for testing.
 
 <a name="observability"/>
 ###Observability
+* The degree to which it is possible to observe (intermediate and final) test results.
 
 <a name="isolateability"/>
 ###Isolateability
+* The degree to which the component under test can be tested in isolation.
 
 <a name="separationOfConcerns"/>
 ###Separation Of Concerns
+* The degree to which the component under test has a single, well defined responsibility.
 
 <a name="understandability"/>
 ###Understandability
+* The degree to which the component under test is documented or self-explaining.
 
 <a name="heterogeneity"/>
 ###Heterogeneity
+* The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 <a name="staticsAndAnalytics"/>
 ##Report Test Statistics and analytics
-
+* The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
 
 The automatic tests were implemented using ***Python*** test framework, which covers all ***Flask*** modules.
 
