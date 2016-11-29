@@ -60,7 +60,7 @@ In order to link the testability with the difficulty to find potential faults in
 ###Isolateability
 * The degree to which the component under test can be tested in isolation.
 
-The isolateability of a CUT is a consequence of a good code organization and file separation. The way a component acn be tested in an isolated or independent way depends of how it relates with other modules. Inside the Flask test folder there is a wealth of test types covering each module, making it relatively complete. Also, because each test file covers a different module, makes the tests very isolated from each other.
+The isolateability of a CUT is a consequence of a good code organization and file separation. The way a component can be tested in an isolated or independent way depends of how it relates with other modules. Inside the Flask test folder there is a wealth of test types covering each module, making it relatively complete. Also, because each test file covers a different module, makes the tests very isolated from each other.
 
 <a name="separationOfConcerns"/>
 ###Separation of Concerns
@@ -73,8 +73,7 @@ The separation of concerns in Flask is well defined due to well distincts module
 * The degree to which the component under test is documented or self-explaining.
 
 
-The community build an impressive documentation over the years, every main topic and some more specific are well explained and
-frequently updated. But some topics need improvement to make easier to contribute to the project or to a developer use it in their project. This documentation is important because some implementation use external libraries making then harder to understand their behaviour others because of its complexity.
+The community build an impressive documentation over the years, every main topic and some more specific are well explained and frequently updated. But some topics need improvement to make easier to contribute to the project or to a developer use it in their project. This documentation is important because some implementation use external libraries making then harder to understand their behaviour others because of its complexity.
 
 Also, there are  extended  comments  in all code to make the learning curve easier.
 
@@ -99,6 +98,7 @@ Methods:
 
 
 The tools used in testing are reliable and from a safe source: 
+
 * coverage.py
 * pytest.py
 * tox
@@ -132,6 +132,9 @@ The coverage is satisfying , with a global result of 86% of the tests passing, a
 </p>
 
 From the chart above it's possible to see that only three modules are bellow 80%, showing once again the reasonable coverage of ***Flask***. From our analysis, the modules in these circunstancies are harder to develop tests for them, because they require a lot of specific tests, resulting in a considerable amount of time to develop them. The client module has a low percentage coverage because the current tests weren't update to current client version.
+
+The strategie implemented for the tests is “White-Box” because the tests have been updated time to time, when there is time for it, some test are developed for user who find bugs and give a case example for more experienced persons in the project to fix it. Also, most test implement are the same that is implemented in a “Black-Box” but its used tools to analyse the results, coverage.py to analyse code coverage and “tox”to run test in multiple python version.
+
 
 <a name="bug"/>
 ##Identify a new bug and correct a bug
