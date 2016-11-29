@@ -68,9 +68,37 @@ In order to link the testability with the difficulty to find potential faults in
 ###Understandability
 * The degree to which the component under test is documented or self-explaining.
 
+
+The community build an impressive documentation over the years, every main topic and some more specific are well explained and
+frequently updated. But some topics need improvement to make easier to contribute to the project or to a developer use it in their project. This documentation is important because some implementation use external libraries making then harder to understand their behaviour others because of its complexity.
+
+Also, there are  extended  comments  in all code to make the learning curve easier.
+
 <a name="heterogeneity"/>
 ###Heterogeneity
 * The degree to which the use of diverse technologies requires to use diverse test methods and tools in parallel.
+
+
+
+The Flask isn’t a heterogeneous project because only really on 2 libraries and the main reason for that is that the core can be extended to adapt to necessities of the developer. 
+
+Jinja2 : a powerful templating engine 
+wekerzeub: WSGI library 
+
+
+The tests implemented focus on behaviour test between this libraries and connection to flask , this two are mature libraries and it’s assume that they work. 
+
+Methods: 
+
+Integration Testing
+Unit Testing 
+
+
+The tools used in testing are reliable and from a save source: 
+coverage.py
+pytest.py
+tox
+
 
 <a name="staticsAndAnalytics"/>
 ##Report Test Statistics and analytics
