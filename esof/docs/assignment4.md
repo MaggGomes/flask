@@ -50,7 +50,7 @@ In order to link the testability with the difficulty to find potential faults in
 
 <a name="controllability"/>
 ###Controllability
-* The degree to which it is possible to control the state of the component under test as required for testing.
+* The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
 
 <a name="observability"/>
 ###Observability
@@ -60,9 +60,13 @@ In order to link the testability with the difficulty to find potential faults in
 ###Isolateability
 * The degree to which the component under test can be tested in isolation.
 
+The isolateability of a CUT is a consequence of a good code organization and file separation. The way a component acn be tested in an isolated or independent way depends of how it relates with other modules. Inside the Flask test folder there is a wealth of test types covering each module, making it relatively complete. Also, because each test file covers a different module, makes the tests very isolated from each other.
+
 <a name="separationOfConcerns"/>
-###Separation Of Concerns
+###Separation of Concerns
 * The degree to which the component under test has a single, well defined responsibility.
+
+The separation of concerns in Flask is well defined due to well distincts modules. Each of the main modules is responsible for a main task or problem of the software. However, when the module needs to handle a problem of big complexity, th problem is divided in subproblems for a better resolution. This approach allows not a better compreension of Flask functionality, but also  greater test effectivness, since it's possible to isolate small modules, allowing a complete project test. 
 
 <a name="understandability"/>
 ###Understandability
@@ -90,14 +94,14 @@ The tests implemented focus on behaviour test between this libraries and connect
 
 Methods: 
 
-Integration Testing
-Unit Testing 
+* Integration Testing
+* Unit Testing 
 
 
-The tools used in testing are reliable and from a save source: 
-coverage.py
-pytest.py
-tox
+The tools used in testing are reliable and from a safe source: 
+* coverage.py
+* pytest.py
+* tox
 
 
 <a name="staticsAndAnalytics"/>
