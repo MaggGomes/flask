@@ -89,17 +89,19 @@ Also, there are  extended  comments  in all code to make the learning curve easi
 
 The Flask isn’t a heterogeneous project because only really on 2 libraries and the main reason for that is that the core can be extended to adapt to necessities of the developer. 
 
-Jinja2 : a powerful templating engine 
-wekerzeub: WSGI library 
+* Jinja2 : a powerful templating engine 
+* wekerzeub: WSGI library 
 
 
 The tests implemented focus on behaviour test between this libraries and connection to flask , this two are mature libraries and it’s assume that they work. 
 
 Methods: 
 
-* Integration Testing
 * Unit Testing 
+* Integration Testing
 
+
+**Integration testing** is a logical extension of unit testing. In its simplest form, two units that have already been tested are combined into a component and the interface between them is tested. A componennt refers to an integrated aggregate of more than one unit. In a realistic scenario, many units are combined into components, which are in turn aggregated into even larger parts of the program. The idea is to test combinations of pieces and eventually expand the process to test your modules with those of other groups. Eventually all the modules making up a process are tested together. Beyond that, if the program is composed of more than one process, they should be tested in pairs rather than all at once.
 
 The tools used in testing are reliable and from a safe source: 
 
@@ -139,6 +141,7 @@ From the chart above it's possible to see that only three modules are bellow 80%
 
 The strategie implemented for the tests is “White-Box” because the tests have been updated time to time, when there is time for it, some test are developed for user who find bugs and give a case example for more experienced persons in the project to fix it. Also, most test implement are the same that is implemented in a “Black-Box” but its used tools to analyse the results, coverage.py to analyse code coverage and “tox”to run test in multiple python version.
 
+In jinja2 and Werkezeug modules have also integration test  to identifie if there is a problem in the interface between this modules and Flask. This tests uses the  umbrella approach that requires testing along functional data and control-flow paths. First, the inputs for functions are integrated from this modules to Flask. The outputs for each function are then integrated in the top-down manner. The primary advantage of this approach is the degree of support for early release of limited functionality. It also helps minimize the need for stubs and drivers. The potential weaknesses of this approach are significant, however, in that it can be less systematic than the other two approaches, leading to the need for more regression testing.
 
 <a name="bug"/>
 ##Identify a new bug and correct a bug
