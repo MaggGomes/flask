@@ -52,9 +52,13 @@ In order to link the testability with the difficulty to find potential faults in
 ###Controllability
 * The degree to which it is possible to control the state of the component under test (CUT) as required for testing.
 
+Flask contains specific classes to test the several functionalities of the application. Developers have the flexibility to change input parameters in the application as necessary for any given test, but network related variables are difficult to control. The API can also be tested with the classes created for that effect.
+
 <a name="observability"/>
 ###Observability
 * The degree to which it is possible to observe (intermediate and final) test results.
+
+Flask uses a tool named Tox to run the tests in a automated way. Using this tool, becomes relatively simple not only to run the tests everytime is necessary, but alto to read the results and verify if some test failed or the test coverage of a Flask module. Also, the recreation of specific situations, to test certain states of the software allows the test results to become more valuable and understandable.
 
 <a name="isolateability"/>
 ###Isolateability
