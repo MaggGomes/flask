@@ -17,6 +17,9 @@
  * [Heterogeneity](#heterogeneity)
 3. [Report Test Statistics and analytics](#staticsAndAnalytics)
 4. [Identify a new bug and correct a bug](#bug)
+ * [Information](#info)
+ * [Correction](#correction)
+ * [Pull Request](#pull)
 5. [Group Contribution](#contribution)
 
 <a name="introduction"/>
@@ -145,6 +148,25 @@ In jinja2 and Werkezeug modules have also integration test  to identifie if ther
 
 <a name="bug"/>
 ##Identify a new bug and correct a bug
+
+On issues page of flask repository, is possible to find the [bug](https://github.com/pallets/flask/issues/2007) that we choose to fix.
+<a name="info"/>
+###Information
+
+The bug happens when is used an IP address in SESSION_COOKIES_DOMAIN. Because only domains work when used in cookies otherwise it won't work. We ask on the page of the bug, if it is better give a warnning or abort the program. They said that the best option would be give a warning and that is what we decide to do.
+
+<a name="correction"/>
+###Correction
+
+To fix this bug, we made a function that gives a warning if the argument is an IP address. The function is capable to recive  IPv4 and  IPv6
+
+
+
+
+<a name="pull"/>
+###Pull Request
+
+
 
 <a name="contribution"/>
 ##Group Contribution
