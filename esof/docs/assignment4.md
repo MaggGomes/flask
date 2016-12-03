@@ -160,7 +160,9 @@ The bug happens when is used an IP address in SESSION_COOKIES_DOMAIN. Because on
 
 To fix this bug, we made a function that gives a warning if the argument is an IP address. The function is capable to recive  IPv4 and  IPv6
 
-
+<p align="center">
+   <img src="https://github.com/rodavoce/flask/blob/development/esof/res/codigo.PNG">
+</p>
 
 
 <a name="pull"/>
