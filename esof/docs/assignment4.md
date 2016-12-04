@@ -161,13 +161,22 @@ The bug happens when is used an IP address in SESSION_COOKIES_DOMAIN. Because on
 To fix this bug, we made a function that gives a warning if the argument is an IP address. The function is capable to proccess IPv4 and  IPv6 address
 
 <p align="center">
-   <img src="https://github.com/rodavoce/flask/blob/development/esof/res/codigo.PNG">
+   <img src="https://raw.githubusercontent.com/rodavoce/flask/development/esof/res/is_ip().png">
 </p>
 
 
 <a name="pull"/>
 ###Pull Request
-We made the pull request at 21.59 of 4th of December and we add some minor problems that we solved after some discussion we made a second commit at 23:39 and we are still waiting for feedback.
+We made the pull request at 21.59 of 4th of December and we add some minor problems that we solved after some discussion we made a second commit at 23:39 and accepted at 23:48.
+
+<p align="center">
+   Pull request history:
+   https://github.com/pallets/flask/pull/2105#pullrequestreview-11303332
+</p>
+
+<p align="center">
+   <img src="https://raw.githubusercontent.com/rodavoce/flask/development/esof/res/commit_accepted.png">
+</p>
 
 
 <a name="contribution"/>
