@@ -167,7 +167,7 @@ To fix this bug, we made a function that gives a warning if the argument is an I
 
 <a name="pull"/>
 ###Pull Request
-We made the pull request at 22:06 of 4th of December and are still waiting for it to be accepted.
+We made the pull request at 22:06 of 4th of December and we are still waiting for it to be accepted.
 
 
 <a name="contribution"/>
