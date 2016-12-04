@@ -153,7 +153,7 @@ On issues page of flask repository, it is possible to find the [bug](https://git
 <a name="info"/>
 ###Information
 
-The bug happens when is used an IP address in SESSION_COOKIES_DOMAIN. Because only domains work when used in cookies otherwise it won't work. We ask on the page of the bug, if it is better give a warnning or abort the program. We asked the user who found the issue and he said that the best option would be to give a warning message and make the verification prepared to process IPv4 and IPv6 addresses. The user didn't remember why it was needed in SERVER_DOMAIN so we didn't checked there altough the function is prepared for that.
+The bug happens when is used an IP address in SESSION_COOKIES_DOMAIN. Because only domains work when used in cookies otherwise it won't work. We ask on the page of the bug, if it is better give a warnning or abort the program. We discussed with the user who found the issue and he said that the best option would be to give a warning message and make the verification prepared to process IPv4 and IPv6 addresses. The user didn't remember why it was needed in SERVER_DOMAIN so we didn't checked there altough the function is prepared for that.
 
 <a name="correction"/>
 ###Correction
