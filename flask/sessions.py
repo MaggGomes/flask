@@ -17,7 +17,7 @@ from werkzeug.http import http_date, parse_date
 from werkzeug.datastructures import CallbackDict
 from . import Markup, json
 from ._compat import iteritems, text_type
-from .helpers import total_seconds
+from .helpers import total_seconds, is_IP
 
 from itsdangerous import URLSafeTimedSerializer, BadSignature
 
@@ -168,7 +168,7 @@ class SessionInterface(object):
     null_session_class = NullSession
 
     #: A flag that indicates if the session interface is pickle based.
-    #: This can be used by flask extensions to make a decision in regards
+    #: This can be used by Flask extensions to make a decision in regards
     #: to how to deal with the session object.
     #:
     #: .. versionadded:: 0.10
@@ -332,6 +332,7 @@ class SecureCookieSessionInterface(SessionInterface):
 
     def save_session(self, app, session, response):
         domain = self.get_cookie_domain(app)
+        is_IP(domain, "SESSION_COOKIE_DOMAIN")
         path = self.get_cookie_path(app)
 
         # Delete case.  If there is no session we bail early.
