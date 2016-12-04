@@ -90,13 +90,13 @@ Also, there are  extended  comments  in all code to make the learning curve easi
 
 
 
-The Flask isn’t a heterogeneous project because only really on 2 libraries and the main reason for that is that the core can be extended to adapt to necessities of the developer. 
+The Flask isn’t a heterogeneous project because only really has two supportive libraries and the main reason for that is that the core can be extended to adapt to necessities of the developer. 
 
 * Jinja2 : a powerful templating engine 
 * wekerzeub: WSGI library 
 
 
-The tests implemented focus on behaviour test between this libraries and connection to flask , this two are mature libraries and it’s assume that they work. 
+The tests implemented focus on behaviour test between this libraries and the connection to flask. These two are mature libraries and it’s assumed that they work. 
 
 Methods: 
 
@@ -149,7 +149,7 @@ In jinja2 and Werkezeug modules have also integration test  to identifie if ther
 <a name="bug"/>
 ##Identify a new bug and correct a bug
 
-On issues page of flask repository, is possible to find the [bug](https://github.com/pallets/flask/issues/2007) that we choose to fix.
+On issues page of flask repository, it is possible to find the [bug](https://github.com/pallets/flask/issues/2007) that we choose to fix.
 <a name="info"/>
 ###Information
 
