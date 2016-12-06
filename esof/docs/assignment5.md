@@ -18,6 +18,8 @@
 <a name="introduction"/>
 ##Introduction
 
+Since flask is an open source project, there are multiple features that normaly are proposed by the community. This project has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
+
 <a name="identification"/>
 ##Identification of feature
 
