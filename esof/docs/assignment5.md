@@ -10,7 +10,7 @@
 <a name="index"/>
 ##**Index**
 1. [Introduction](#introduction)
-2. [Software Evolution and Maintenance](#software)
+2. [Software Evolution and Maintenance](#Software Evolution and Maintenance)
 3. [Identification of feature](#identification)
 4. [Componets changed](#components)
 5. [Feature Evolution](#evolution)
@@ -27,16 +27,37 @@ The maintance of the software usually have costs, but since flask is an open sou
 Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
 
 <a name ="Software evolution and maintainence"/>
-##software
+##Software Evolution and Maintenance
 
+
+To evalute Flask was used a tool called Better Code Hub. This tool evaluates the framework and derteminate which factors should be improved.
+
+   Below, are the topics analised  to determinate which factor need improvement:
+
+* Write small units of code
+* Write simple units of code
+* No duplicated code
+* Keep unit interfaces small
+* Separate concerns in modules
+* Couple architecture components loosely
+* Keep architecture  components balanced
+* Keep the codebase small
+* Automated tests
+* Develop a structured and optimized code
+
+
+
+   
+After run Better Code Hub in your project not every metric got a positive score. Flask get a aproval in 7 metric, in a total of 10.
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/AllResults.png>
 </p>
 
+It was necessary to configure .bettercodehub.yml to exclude the example and documentation folder  from  the analyses.
 
-<p align="center">
-   <img src=https://github.com/rodavoce/flask/blob/development/esof/res/WriteSimple.png>
-</p>
+
+The Flask its a project that in general has short units of code that makes easier to understand but has many functions that have a increasded complexity. Also the code doesn't have duplicated code which means exists one fucntion for every action.
+
 
 
 <p align="center">
@@ -47,17 +68,6 @@ Since flask is an open source project, there are multiple features that normaly 
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/SeparateConcernsModules.png>
 </p>
-
-
-
-<p align="center">
-   <img src=https://github.com/rodavoce/flask/blob/development/esof/res/CoupleArchiteureComponents.png>
-</p>
-
-
-
-
-
 
 
 
