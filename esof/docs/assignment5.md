@@ -76,8 +76,15 @@ The Flask its a project that in general has short units of code that makes easie
 
 <a name="identification"/>
 ##Identification of feature
+
+Flask uses a tool named [issues tracker](https://github.com/pallets/flask/issues) where the community can propose new features to be added, as well as make bug fixes requests. So we decided to look for a feature using that tool.
    
-After some discussion beetween the members of the group we decide to the feature [#1286](https://github.com/pallets/flask/issues/1286), because we think it is very important and why is that? Uftp8 is becoming to be more used than non-ASCII code and since we believe that is very important to have flask updated to be more compatible with what the clients want or need, we decide to implement this feature.
+After some discussion beetween the members of the group we decide to the feature [#1286](https://github.com/pallets/flask/issues/1286).
+
+we choose this feature because we think it is very important since uftp8 is becoming to be more used than non-ASCII code and since we believe that is very important to have flask updated to be more compatible with what the clients want or need, we decide to implement this feature.
+
+
+
 
 <a name="components"/>
 ##Componets changed
