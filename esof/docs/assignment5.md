@@ -10,10 +10,11 @@
 <a name="index"/>
 ##**Index**
 1. [Introduction](#introduction)
-2. [Identification of feature](#identification)
-3. [Componets changed](#components)
-4. [Feature evolution](#evolution)
-5. [Group Contribution](#contribution)
+2. [Software Evolution and Maintenance](#software)
+3. [Identification of feature](#identification)
+4. [Componets changed](#components)
+5. [Feature evolution](#evolution)
+6. [Group Contribution](#contribution)
 
 <a name="introduction"/>
 ##Introduction
@@ -21,6 +22,7 @@
 Since flask is an open source project, there are multiple features that normaly are proposed by the community. This project has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
 
 <a name ="Software evolution and maintainence"/>
+##software
 
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/AllResults.png>
