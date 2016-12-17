@@ -19,7 +19,7 @@
 <a name="introduction"/>
 ##Introduction
 
-Since flask is an open source project, there are multiple features that normaly are proposed by the community. This project has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
+Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
 
 <a name ="Software evolution and maintainence"/>
 ##software
@@ -62,7 +62,7 @@ Since flask is an open source project, there are multiple features that normaly 
 <a name="identification"/>
 ##Identification of feature
    
-After some discussion beetween the members of the group we decide to the feature [#1286](https://github.com/pallets/flask/issues/1286), because we think it is very important and why is that? Because uftp8 it is becoming to be more used than non-ASCII code and since we believe that is very important to have flask updated to be more compatible with what the clients want or need, we decide to implement this feature.
+After some discussion beetween the members of the group we decide to the feature [#1286](https://github.com/pallets/flask/issues/1286), because we think it is very important and why is that? Uftp8 is becoming to be more used than non-ASCII code and since we believe that is very important to have flask updated to be more compatible with what the clients want or need, we decide to implement this feature.
 
 <a name="components"/>
 ##Componets changed
