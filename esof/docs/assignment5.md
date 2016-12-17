@@ -31,7 +31,7 @@ Since flask is an open source project, there are multiple features that normaly 
 ##Software Evolution and Maintenance
 
 
-To evalute Flask was used a tool called Better Code Hub. This tool evaluates the framework and derteminate which factors should be improved.
+To evalute Flask was used a tool called [Better Code Hub] (https://bettercodehub.com/). This tool evaluates the framework and derteminate which factors should be improved.
 
    Below, are the topics analised  to determinate which factor need improvement:
 
@@ -49,7 +49,7 @@ To evalute Flask was used a tool called Better Code Hub. This tool evaluates the
 
 
    
-After run Better Code Hub in your project not every metric got a positive score. Flask get a aproval in 7 metric, in a total of 10.
+After run [Better Code Hub](https://bettercodehub.com/) in your project not every metric got a positive score. Flask get a aproval in 7 metric, in a total of 10.
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/AllResults.png>
 </p>
@@ -71,7 +71,7 @@ One of the metric that didn't pass was  simple units of code.
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/WriteSimple.png>
 </p>
 
-Some function in flask have to check many things to achieve its objective increasing its  complexity and making them harder to understand. 
+Some function in flask have to check many things to achieve its objective increasing its  complexity and making them harder to understand. One solution to this problem is extract branchs from the function and create auxiliary functions decreasing its complecxity making then more understandable.
 
 
 Other metric that failed was keep unit interfaces small.
