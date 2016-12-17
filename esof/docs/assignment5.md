@@ -13,8 +13,9 @@
 2. [Software Evolution and Maintenance](#software)
 3. [Identification of feature](#identification)
 4. [Componets changed](#components)
-5. [Feature evolution](#evolution)
-6. [Group Contribution](#contribution)
+5. [Feature Evolution](#evolution)
+6. [Pull Request](#pull)
+7. [Group Contribution](#contribution)
 
 <a name="introduction"/>
 ##Introduction
@@ -73,6 +74,9 @@ After some discussion beetween the members of the group we decide to the feature
 
 <a name="evolution"/>
 ##Feature evolution
+
+<a name="pull"/>
+##Pull Request
 
 <a name="contribution"/>
 ##Group Contribution
