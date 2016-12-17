@@ -26,6 +26,7 @@ The maintance of the software usually have costs, but since flask is an open sou
 
 Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
 
+
 <a name ="Software evolution and maintainence"/>
 ##Software Evolution and Maintenance
 
@@ -59,17 +60,37 @@ It was necessary to configure .bettercodehub.yml to exclude the example and docu
 The Flask its a project that in general has short units of code that makes easier to understand but has many functions that have a increasded complexity. Also the code doesn't have duplicated code which means exists one fucntion for every action.
 
 
+Other important metric, to ensure maitanence and evolution, its realted with the size of codebase. The tool evaluated the project in 7man-months which is quite impressive because this framework has an extensive API.
 
+The based test are quite impressive  with a nice proprotion between lines of production code and lines of test codes of 130%.
+
+
+
+One of the metric that didn't pass was  simple units of code. 
+<p align="center">
+   <img src=https://github.com/rodavoce/flask/blob/development/esof/res/WriteSimple.png>
+</p>
+
+Some function in flask have to check many things to achieve its objective increasing its  complexity and making them harder to understand. 
+
+
+Other metric that failed was keep unit interfaces small.
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/KeepUnitInterfacesSmall.png>
 </p>
 
+It's  true that some methods in Flask required a considerable amount of argumentes, soo the evaluation its correct. the amount of arguments should be reduced, to turn the fuction easier to use and maintain. One soluction is to group 
+the information in apropiated structures.
+
+
+The last metric that failed was separate concerns in modules.
 
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/SeparateConcernsModules.png>
 </p>
 
-
+The project is well structured but the metric fails because the 2 modules that combine all other modules, the reason for that is flask being a framework. All other modules are independent except the ones who combine all tecnologies 
+and functionalites  to make this framework work.
 
 
 
