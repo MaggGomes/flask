@@ -19,6 +19,10 @@
 <a name="introduction"/>
 ##Introduction
 
+In software engineering, Software Maintance or Evolution is the process of improve and optimize the software. This phase happens when the software is already in use. Normally this step is taken to fix errors and implement new features required by users or the community.
+
+The maintance of the software usually have costs, but since flask is an open source there are no costs.
+
 Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
 
 <a name ="Software evolution and maintainence"/>
