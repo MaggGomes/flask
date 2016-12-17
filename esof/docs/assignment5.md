@@ -57,7 +57,7 @@ After run Better Code Hub in your project not every metric got a positive score.
 It was necessary to configure .bettercodehub.yml to exclude the example and documentation folder  from  the analyses.
 
 
-The Flask its a project that in general has short units of code that makes easier to understand but has many functions that have a increasded complexity. Also the code doesn't have duplicated code which means exists one fucntion for every action.
+The Flask its a project that in general has short units of code that makes easier to understand but has many functions that have a increasded complexity. Alsod oesn't have duplicated code which means exists one fucntion for every action.
 
 
 Other important metric, to ensure maitanence and evolution, its realted with the size of codebase. The tool evaluated the project in 7man-months which is quite impressive because this framework has an extensive API.
@@ -79,7 +79,7 @@ Other metric that failed was keep unit interfaces small.
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/KeepUnitInterfacesSmall.png>
 </p>
 
-It's  true that some methods in Flask required a considerable amount of argumentes, soo the evaluation its correct. the amount of arguments should be reduced, to turn the fuction easier to use and maintain. One soluction is to group 
+It's  true that some methods in Flask required a considerable amount of arguments, soo the evaluation its correct. the amount of arguments should be reduced, to make the fuction easier to use and maintain. One soluction is to group 
 the information in apropiated structures.
 
 
