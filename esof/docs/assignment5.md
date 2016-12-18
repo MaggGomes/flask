@@ -108,12 +108,24 @@ After some investigation of the test code implementation, we verified that ***ct
 <a name="identification"/>
 ##Identification of feature
 
+
+
 Flask uses a tool named [issues tracker](https://github.com/pallets/flask/issues) where the community can propose new features to be added, as well as make bug fixes requests. So we decided to look for a feature using that tool.
    
-After some discussion beetween the members of the group we decide to the feature [#1286](https://github.com/pallets/flask/issues/1286).
+After some discussion beetween the members of the group we decide to do the feature [#1286](https://github.com/pallets/flask/issues/1286).
+
+We have chosen this feature because we think it is very important since uft-8 is becoming to be more used than ASCII. As you can see on the graphic bellow the percentage of usage of uft-8 is nearly 88% .
+
+Graph representing the usage of character encodings for websites
+
+<p align="center">
+   <img src=https://github.com/rodavoce/flask/blob/development/esof/res/statistics.PNG>
+</p>
 
 
-This feature, it's useful to implement because we think the importance of UTF-8 is growing so it's important to have flask updated to the current needs to don't become outdated.
+Although there is no consensus on the part of project members and the community about how this situation should be resolved, we decide (how we are going to solve it), because we think that flask should be as compatible as possible with Customers need.
+
+
 
 <a name="components"/>
 ##Components changed
@@ -132,3 +144,7 @@ This feature, it's useful to implement because we think the importance of UTF-8 
 |Manuel Gomes|up201402679||
 |Marcelo Ferreira|up201405323||
 |Pedro Dias|up201404178||
+
+
+##References
+https://w3techs.com/technologies/history_overview/character_encoding/ms/y
