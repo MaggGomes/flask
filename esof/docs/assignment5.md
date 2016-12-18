@@ -26,6 +26,8 @@ During the software update its necessary to have in count what parts should be m
 
 The maintance of the software usually have costs, but since flask is an open source there are no costs.
 
+One important aspect in an open source project is comunication between developers since the team is always changing to discuss the better way to improve the project.
+
 Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implentment a new feature, since the identification of the feature until the pull request to the main project.
 
 
@@ -62,10 +64,10 @@ After run [Better Code Hub](https://bettercodehub.com/) in your project not ever
 It was necessary to configure .bettercodehub.yml to exclude the example and documentation folder  from  the analyses.
 
 
-The Flask its a project that in general has short units of code that makes easier to understand but has many functions that have a increasded complexity. Also doesn't have duplicated code soo only exists one fucntion for every action.
+The Flask its a project that in general has short units of code that makes easier to understand. Also doesn't have duplicated code soo only exists one fucntion for every action.
 
 
-Other important metric, to ensure maitanence and evolution, its realted with the size of codebase. The tool evaluated the project in 7man-months which is quite impressive because this framework has an extensive API.
+Other important metric, to ensure maitanence and evolution, its realted with the size of codebase. The tool evaluated the project in 7man-months which is quite impressive because this framework has an extensive API and the recomendation by [Better Code Hub](https://bettercodehub.com/) is 20-years-man.
 
 The based test are quite impressive  with a nice proprotion between lines of production code and lines of test codes of 130%.
 
