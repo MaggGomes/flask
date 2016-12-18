@@ -112,7 +112,7 @@ Flask uses a function of Github named [issues tracker](https://github.com/pallet
    
 After some discussion beetween the members of the group we decide to do the feature marked as issue[#1286](https://github.com/pallets/flask/issues/1286).
 
-We have chosen this feature because we think it is very important since non-ASCII encode, in particular uft-8, is becoming a more used encoding than ASCII. As you can see on the graphic bellow the percentage of usage of ASCII encode is very small, around 0,1%.
+This feature has been choosen because it is very important since non-ASCII encode, in particular uft-8, is becoming a more used encoding than ASCII. As you can see in the graphic bellow the percentage of usage of ASCII encode is very small, around 0,1%.
 
 Graph representing the usage of character encodings for websites <sup>1</sup>
 
@@ -121,7 +121,7 @@ Graph representing the usage of character encodings for websites <sup>1</sup>
 </p>
 
 
-Although there is no consensus on the part of project members and the community about how this situation should be resolved, we decide to implement a way that didn't need a big code restructuring and we followed what user [dsully](https://github.com/pallets/flask/issues/1286#issuecomment-223362859) that consists in sending a warning message when a non-ASCII filename is passed to the function send_file().
+Although there is no consensus on the part of project members and the community about how this situation should be resolved, the group decided to implement a way that didn't need a big code restructuring and followed what user [dsully](https://github.com/pallets/flask/issues/1286#issuecomment-223362859) that consists in sending a warning message when a non-ASCII filename is passed to the function send_file().
 
 After analyzing the project code and documentation, we found that the function that needed to be changed was the function send_file() that we then located with the help of the search functions of Atom in /flask/helpers.py.
 
