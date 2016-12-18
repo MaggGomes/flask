@@ -130,10 +130,10 @@ We started by creating the function is_ascii() that receives a string it will th
 Inside send_file() we check if the argument filename_or_fp is a string, because it can be a file pointer, if it is a string we then call our auxiliar function is_ascii() passing the filename_or_fp argument from send_file() if it returns false (meaning there is at least a non-ASCII characters in filename_or_fp) it gives a warning of type UnicodeWarning.
 
 <a name="pull"/>
-##[Pull Request](https://github.com/pallets/flask/pull/2115)
+##[Pull Request #2115](https://github.com/pallets/flask/pull/2115)
 Our implementation for the feature was tested in the default flask's tests and passed all of them as it should.
 
-The pull request was made at 18:35 on 18/12/2016 and passed the tests made and required by the main flask's contributors at 18:45 on 18/12/2016 and is waiting to be merged into the main branch of the project. Link to the pull request is at the topic's title ad [here](https://github.com/pallets/flask/pull/2115).
+The pull request was made at 18:35 on 18/12/2016 and passed the tests made and required by the main flask's contributors at 18:45 on 18/12/2016 and is waiting to be merged into the main branch of the project. Link to the pull request is at the topic's title and [here](https://github.com/pallets/flask/pull/2115).
 
 <a name="contribution"/>
 ##Group Contribution
