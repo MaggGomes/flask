@@ -12,9 +12,8 @@
 1. [Introduction](#introduction)
 2. [Software Evolution and Maintenance](#Software Evolution and Maintenance)
 3. [Identification of the feature](#identification)
-4. [Feature Evolution](#evolution)
-5. [Pull Request](#pull)
-6. [Group Contribution](#contribution)
+4. [Pull Request](#pull)
+5. [Group Contribution](#contribution)
 
 <a name="introduction"/>
 ##Introduction
@@ -129,10 +128,6 @@ After analyzing the project code and documentation, we found that the function t
 We started by creating the function is_ascii() that receives a string it will then see if all the characters in the string are ASCII encoded and if so it returns true if not it returns false. We choose to implement this auxiliary funtion instead of implement it inside send_file(), because this way it could be used in other parts of the project if needed.
 
 Inside send_file() we check if the argument filename_or_fp is a string, because it can be a file pointer, if it is a string we then call our auxiliar function is_ascii() passing the filename_or_fp argument from send_file() if it returns false (meaning there is at least a non-ASCII characters in filename_or_fp) it gives a warning of type UnicodeWarning.
-
-
-<a name="evolution"/>
-##Feature evolution
 
 <a name="pull"/>
 ##Pull Request
