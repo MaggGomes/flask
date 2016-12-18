@@ -11,7 +11,7 @@
 ##**Index**
 1. [Introduction](#introduction)
 2. [Software Evolution and Maintenance](#Software Evolution and Maintenance)
-3. [Identification of the feature](#identification)
+3. [Implementation of the feature](#implementation)
 4. [Pull Request](#pull)
 5. [Group Contribution](#contribution)
 
@@ -103,8 +103,8 @@ After some investigation of the test code implementation, we verified that ***ct
 
 
 
-<a name="identification"/>
-##Identification of feature
+<a name="implementation"/>
+##Implementation of the feature
 
 
 
