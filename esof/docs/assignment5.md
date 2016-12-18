@@ -133,8 +133,7 @@ Inside he function **send_file()** it's checked if the argument **filename_or_fp
 ##[Pull Request #2115](https://github.com/pallets/flask/pull/2115)
 Our implementation for the feature was tested in the default flask's tests and passed all of them as it should.
 
-The pull request was made at 18:35 on 18/12/2016 and passed the tests made and required by the main flask's contributors at 18:45 on 18/12/2016 and is waiting to be merged into the main branch of the project. Link to the pull request is at the topic's title and [here](https://github.com/pallets/flask/pull/2115). After  pull request has requested to update the local repository and at 22:20 repository was updated.
-
+The pull request was made at 18:35 on 18/12/2016 and one of the contributors asked for some changes, they were made and commited. Link to the pull request is at the topic's title and [here](https://github.com/pallets/flask/pull/2115).
 <a name="contribution"/>
 ##Group Contribution
 |Name|Number|Contribution|
