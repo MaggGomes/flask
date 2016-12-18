@@ -108,11 +108,11 @@ After some investigation of the test code implementation, we verified that ***ct
 
 
 
-Flask uses a function of Github named [issues tracker](https://github.com/pallets/flask/issues) where the community can propose new features to be added, as well as post bug fixes requests. So we decided to look for a feature using there.
+Flask uses a function of Github named [issues tracker](https://github.com/pallets/flask/issues) where the community can propose new features to be added, as well as post bug fixes requests. So we decided to look for a feature there.
    
 After some discussion beetween the members of the group we decide to do the feature marked as issue[#1286](https://github.com/pallets/flask/issues/1286).
 
-We have chosen this feature because we think it is very important since uft-8 is becoming a more used encoding than ASCII. As you can see on the graphic bellow the percentage of usage of uft-8 is nearly 88% .
+We have chosen this feature because we think it is very important since non-ASCII encode, in particular uft-8, is becoming a more used encoding than ASCII. As you can see on the graphic bellow the percentage of usage of ASCII encode is very small, around 0,1%.
 
 Graph representing the usage of character encodings for websites <sup>1</sup>
 
