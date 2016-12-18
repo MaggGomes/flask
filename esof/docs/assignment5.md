@@ -126,8 +126,10 @@ Although there is no consensus on the part of project members and the community 
 
 After analyzing the project code and documentation, we found that the function that needed to be changed was the function send_file() that we then located with the help of the search functions of Atom in /flask/helpers.py.
 
-We started by creating the function is_ascii() that receives an argument of any type and then checks if it is a string, if it isn't we function will return false, if it is a string it will see if all the characters in the string are ASCII encoded and if so it returns true
-if not it returns false. We choose to implement this auxiliary funtion instead of implement it inside send_file(), because this way it could be used in other parts of the project if needed.
+We started by creating the function is_ascii() that receives a string it will then see if all the characters in the string are ASCII encoded and if so it returns true if not it returns false. We choose to implement this auxiliary funtion instead of implement it inside send_file(), because this way it could be used in other parts of the project if needed.
+
+Inside send_file() we check if the argument filename_or_fp is a string, because it can be a file pointer, if it is a string we then call our auxiliar function is_ascii() passing the filename_or_fp argument from send_file() if it returns false (meaning there is at least a non-ASCII characters in filename_or_fp) it gives a warning of type UnicodeWarning.
+
 
 <a name="evolution"/>
 ##Feature evolution
