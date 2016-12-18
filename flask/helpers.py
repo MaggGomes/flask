@@ -958,33 +958,3 @@ def total_seconds(td):
     :rtype: int
     """
     return td.days * 60 * 60 * 24 + td.seconds
-
-def is_IP(string, var_name):
-    """Returns the if the string received is an IP or not.
-
-    :param string: the string to check if it an IP or not
-    :param var_name: the name of the variable that is being checked
-
-    :returns: True if string is an IP, False if not
-    :rtype: boolean
-    """
-    ipv4 = string.split('.')
-    ipv6 = string.split(':')
-    try:
-        for i,t in enumerate(ipv6):
-            if not t:
-                ipv6[i] = "0"
-        if(all(int(t,16) >= 0 and int(t,16) <= 65535 for t in ipv6)):
-            print("IPv6 address introduced in " + var_name)
-            return True
-    except ValueError:
-        pass
-
-    if len(ipv4) == 4:
-        try:
-            if(all(int(t) >= 0 and int(t) <= 255 for t in ipv4)):
-                print("IPv4 address introduced in " + var_name)
-        except ValueError:
-            return False
-    else:
-        return False
