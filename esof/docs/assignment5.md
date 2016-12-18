@@ -12,10 +12,9 @@
 1. [Introduction](#introduction)
 2. [Software Evolution and Maintenance](#Software Evolution and Maintenance)
 3. [Identification of the feature](#identification)
-4. [Components changed](#components)
-5. [Feature Evolution](#evolution)
-6. [Pull Request](#pull)
-7. [Group Contribution](#contribution)
+4. [Feature Evolution](#evolution)
+5. [Pull Request](#pull)
+6. [Group Contribution](#contribution)
 
 <a name="introduction"/>
 ##Introduction
@@ -125,12 +124,10 @@ Graph representing the usage of character encodings for websites <sup>1</sup>
 
 Although there is no consensus on the part of project members and the community about how this situation should be resolved, we decide to implement a way that didn't need a big code restructuring and we followed what user [dsully](https://github.com/pallets/flask/issues/1286#issuecomment-223362859) that consists in sending a warning message when a non-ASCII filename is passed to the function send_file().
 
+After analyzing the project code and documentation, we found that the function that needed to be changed was the function send_file() that we then located with the help of the search functions of Atom in /flask/helpers.py.
 
-
-<a name="components"/>
-##Components changed
-
-After analyzing the project code and documentation, the following file was modified to allow the implementation of this functionality:
+We started by creating the function is_ascii() that receives an argument of any type and then checks if it is a string, if it isn't we function will return false, if it is a string it will see if all the characters in the string are ASCII encoded and if so it returns true
+if not it returns false. We choose to implement this auxiliary funtion instead of implement it inside send_file(), because this way it could be used in other parts of the project if needed.
 
 <a name="evolution"/>
 ##Feature evolution
