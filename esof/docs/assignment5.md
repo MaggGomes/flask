@@ -110,11 +110,11 @@ After some investigation of the test code implementation, we verified that ***ct
 
 
 
-Flask uses a tool named [issues tracker](https://github.com/pallets/flask/issues) where the community can propose new features to be added, as well as make bug fixes requests. So we decided to look for a feature using that tool.
+Flask uses a function of Github named [issues tracker](https://github.com/pallets/flask/issues) where the community can propose new features to be added, as well as post bug fixes requests. So we decided to look for a feature using there.
    
-After some discussion beetween the members of the group we decide to do the feature [#1286](https://github.com/pallets/flask/issues/1286).
+After some discussion beetween the members of the group we decide to do the feature marked as issue[#1286](https://github.com/pallets/flask/issues/1286).
 
-We have chosen this feature because we think it is very important since uft-8 is becoming to be more used than ASCII. As you can see on the graphic bellow the percentage of usage of uft-8 is nearly 88% .
+We have chosen this feature because we think it is very important since uft-8 is becoming a more used encoding than ASCII. As you can see on the graphic bellow the percentage of usage of uft-8 is nearly 88% .
 
 Graph representing the usage of character encodings for websites <sup>1</sup>
 
@@ -123,7 +123,7 @@ Graph representing the usage of character encodings for websites <sup>1</sup>
 </p>
 
 
-Although there is no consensus on the part of project members and the community about how this situation should be resolved, we decide (how we are going to solve it), because we think that flask should be as compatible as possible with Customers need.
+Although there is no consensus on the part of project members and the community about how this situation should be resolved, we decide to implement a way that didn't need a big code restructuring and we followed what user [dsully](https://github.com/pallets/flask/issues/1286#issuecomment-223362859) that consists in sending a warning message when a non-ASCII filename is passed to the function send_file().
 
 
 
