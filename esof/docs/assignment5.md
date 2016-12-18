@@ -116,7 +116,7 @@ After some discussion beetween the members of the group we decide to do the feat
 
 We have chosen this feature because we think it is very important since uft-8 is becoming to be more used than ASCII. As you can see on the graphic bellow the percentage of usage of uft-8 is nearly 88% .
 
-Graph representing the usage of character encodings for websites
+Graph representing the usage of character encodings for websites <sup>1</sup>
 
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/statistics.PNG>
@@ -147,4 +147,4 @@ Although there is no consensus on the part of project members and the community 
 
 
 ##References
-https://w3techs.com/technologies/history_overview/character_encoding/ms/y
+<sup>1</sup> https://w3techs.com/technologies/history_overview/character_encoding/ms/y
