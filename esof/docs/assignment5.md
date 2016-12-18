@@ -130,6 +130,8 @@ Although there is no consensus on the part of project members and the community 
 <a name="components"/>
 ##Components changed
 
+After analyzing the project code and documentation, the following file was modified to allow the implementation of this functionality:
+
 <a name="evolution"/>
 ##Feature evolution
 
