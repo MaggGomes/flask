@@ -100,7 +100,7 @@ The last metric that failed was separate concerns in modules.
 </p>
 
 The project is well structured, but the metric fails because the modules ***ctx.py*** and ***app.py*** are present in all modules, withe the purpose to ombine all other modules. However, all other modules are independent except the ones who combine all tecnologies and functionalites to make this framework work.
-After some investigation of the test code implementation, we verified that ***ctx.py*** and ***app.py*** not being well separated, was leading to more extensive and costly tests, with several calls to these modules. This could mean that the necessity of future test implementations for these modules, could lead to an increased maintenance cost, due to the complexity of the implementation fo the tests.
+After some investigation of the test code implementation, we verified that ***ctx.py*** and ***app.py*** not being well separated, was leading to more extensive and costly tests, with several calls to these modules. This could mean that the necessity of future test implementations for these modules, could lead to an increased maintenance cost, due to the complexity of the implementation of the tests.
 
 
 
@@ -112,10 +112,8 @@ Flask uses a tool named [issues tracker](https://github.com/pallets/flask/issues
    
 After some discussion beetween the members of the group we decide to the feature [#1286](https://github.com/pallets/flask/issues/1286).
 
-We have chosen this feature because we think it is very important since uftp8 is becoming to be more used than non-ASCII code and since we believe that is very important to have flask updated to be more compatible with what the clients want or need, we decide to implement this feature.
 
-
-
+This feature, it's useful to implement because we think the importance of UTF-8 is growing so it's important to have flask updated to the current needs to don't become outdated.
 
 <a name="components"/>
 ##Components changed
