@@ -20,11 +20,16 @@
 <a name="introduction"/>
 ##Introduction
 
-In software engineering, Software Maintance or Evolution is the process of improve and optimize the software. This phase happens when the software is already in use. Normally this step is taken to fix errors and implement new features required by users or the community.
+In software engineering, Software Maintance or Evolution is the process of improve and optimize the software. This phase happens when the software is already in use. Normally this step is taken to fix or prevent errors and implement new features required by users or the community.
+
+During the software update its necessary to have in count what parts should be modified and why. Also, should ensure that  the changes doens't change the expected behaviour.
 
 The maintance of the software usually have costs, but since flask is an open source there are no costs.
 
-Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implent a new feature, since the identification of the feature until the pull request to the main project.
+Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implentment a new feature, since the identification of the feature until the pull request to the main project.
+
+
+[![BCH compliance](https://bettercodehub.com/edge/badge/rodavoce/flask)](https://bettercodehub.com)
 
 
 <a name ="Software evolution and maintainence"/>
@@ -57,7 +62,7 @@ After run [Better Code Hub](https://bettercodehub.com/) in your project not ever
 It was necessary to configure .bettercodehub.yml to exclude the example and documentation folder  from  the analyses.
 
 
-The Flask its a project that in general has short units of code that makes easier to understand but has many functions that have a increasded complexity. Alsod oesn't have duplicated code which means exists one fucntion for every action.
+The Flask its a project that in general has short units of code that makes easier to understand but has many functions that have a increasded complexity. Also doesn't have duplicated code soo only exists one fucntion for every action.
 
 
 Other important metric, to ensure maitanence and evolution, its realted with the size of codebase. The tool evaluated the project in 7man-months which is quite impressive because this framework has an extensive API.
