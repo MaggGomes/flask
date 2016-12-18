@@ -24,70 +24,73 @@ In software engineering, Software Maintenance and Evolution is the process of im
 
 During the software update becomes necessary to have in consideration what parts should be modified as well as the reasons. Also, the potential update should ensure that the changes doens't change the expected behaviour.
 
-The maintenance of the software usually have costs, being a big part of the global cost of a software project. However, since **Flask** is an open source, the maintenance costs are are drasticly reduced, possibly having no real costs at all.
+The maintenance of the software usually have costs, being a big part of the global cost of a software project. However, since ***Flask*** is an open source, the maintenance costs are are drasticly reduced, possibly having no real costs at all.
 
 One important aspect in an open source project is the comunication between developers. Since the team is always changing keeping a good dialog, as well a very well documented  code is of extreme importance to help newcomers better understand the project. 
 
-Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implement a new feature, since the identification of the feature until the pull request to the main project.
+Since ***Flask*** is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implement a new feature, since the identification of the feature until the pull request to the main project.
+
+
+
+
 
 
 [![BCH compliance](https://bettercodehub.com/edge/badge/rodavoce/flask)](https://bettercodehub.com)
 
 
-<a name ="Software evolution and maintainence"/>
+<a name ="Software Evolution and Maintenance"/>
 ##Software Evolution and Maintenance
 
 
-To evalute Flask was used a tool called [Better Code Hub] (https://bettercodehub.com/). This tool evaluates the framework and derteminate which factors should be improved.
+To evaluate Flask was used a tool called [Better Code Hub] (https://bettercodehub.com/). This tool evaluates the framework and determinates which factors should be improved.
 
-   Below, are the topics analised  to determinate which factor need improvement:
+   Below are the topics analised by this tool:
 
-* Write small units of code
-* Write simple units of code
-* No duplicated code
-* Keep unit interfaces small
-* Separate concerns in modules
-* Couple architecture components loosely
-* Keep architecture  components balanced
-* Keep the codebase small
-* Automated tests
-* Develop a structured and optimized code
+* Write small units of code;
+* Write simple units of code;
+* No duplicated code;
+* Keep unit interfaces small;
+* Separate concerns in modules;
+* Couple architecture components loosely;
+* Keep architecture  components balanced;
+* Keep the codebase small;
+* Automated tests;
+* Develop a structured and optimized code.
 
 
-
+Before running [Better Code Hub](https://bettercodehub.com/) in ***Flask***, it was necessary to configure ***.bettercodehub.yml*** to exclude the example and documentation folder  from  the analyses.
    
-After run [Better Code Hub](https://bettercodehub.com/) in your project not every metric got a positive score. Flask get a aproval in 7 metric, in a total of 10.
+After running [Better Code Hub](https://bettercodehub.com/) not every metric got a positive score. ***Flask*** gets an approval in 7 metrics of a total of 10.
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/AllResults.png>
 </p>
 
-It was necessary to configure .bettercodehub.yml to exclude the example and documentation folder  from  the analyses.
 
 
-The Flask its a project that in general has short units of code that makes easier to understand. Also doesn't have duplicated code soo only exists one fucntion for every action.
+
+Analysing the results, becomes clear that ***Flask*** is a project that in general has short units of code, which makes easier to understand, contributing to abetter readability of the code. Also the absence of duplicate code is a good indication of a good code structure, reducing complexity and making code editing easier, which leads to a decreased maintenance costs and less human errors.
 
 
-Other important metric, to ensure maitanence and evolution, its realted with the size of codebase. The tool evaluated the project in 7man-months which is quite impressive because this framework has an extensive API and the recomendation by [Better Code Hub](https://bettercodehub.com/) is 20-years-man.
+Other important metric, to ensure maintenance and evolution, its related with the size of codebase. The tool evaluated the project in 7man-months which is quite impressive because this framework has an extensive API and the recomendation by [Better Code Hub](https://bettercodehub.com/) is 20-years-man.
 
 The based test are quite impressive  with a nice proprotion between lines of production code and lines of test codes of 130%.
 
 
 
-One of the metric that didn't pass was  simple units of code. 
+On the other hand, a  metric that didn't pass was simple units of code. 
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/WriteSimple.png>
 </p>
 
-Some function in flask have to check many things to achieve its objective increasing its  complexity and making them harder to understand. One solution to this problem is extract branchs from the function and create auxiliary functions decreasing its complecxity making then more understandable.
+Some functions in ***Flask*** have to check too many things to achieve its objectives, increasing its complexity and making them harder to understand. One solution to this problem is extract branchs from the function and create auxiliary functions, decreasing its complexity and increasing its readability.
 
 
-Other metric that failed was keep unit interfaces small.
+Another metric that failed was keep unit interfaces small.
 <p align="center">
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/KeepUnitInterfacesSmall.png>
 </p>
 
-It's  true that some methods in Flask required a considerable amount of arguments, soo the evaluation its correct. the amount of arguments should be reduced, to make the fuction easier to use and maintain. One soluction is to group 
-the information in apropiated structures.
+It's  true that some methods in ***Flask*** required a considerable amount of arguments, so the evaluation is correct. As already stated, the amount of arguments should be reduced to make the fuctions easier to use and maintain. One soluction to this problem would be to group the information in apropriated structures.
 
 
 The last metric that failed was separate concerns in modules.
@@ -96,8 +99,8 @@ The last metric that failed was separate concerns in modules.
    <img src=https://github.com/rodavoce/flask/blob/development/esof/res/SeparateConcernsModules.png>
 </p>
 
-The project is well structured but the metric fails because the 2 modules that combine all other modules, the reason for that is flask being a framework. All other modules are independent except the ones who combine all tecnologies 
-and functionalites  to make this framework work.
+The project is well structured, but the metric fails because the modules ***ctx.py*** and ***app.py*** are present in all modules, withe the purpose to ombine all other modules. However, all other modules are independent except the ones who combine all tecnologies and functionalites to make this framework work.
+After some investigation of the test code implementation, we verified that ***ctx.py*** and ***app.py*** not being well separated, was leading to more extensive and costly tests, with several calls to these modules. This could mean that the necessity of future test implementations for these modules, could lead to an increased maintenance cost, due to the complexity of the implementation fo the tests.
 
 
 
@@ -109,13 +112,13 @@ Flask uses a tool named [issues tracker](https://github.com/pallets/flask/issues
    
 After some discussion beetween the members of the group we decide to the feature [#1286](https://github.com/pallets/flask/issues/1286).
 
-we choose this feature because we think it is very important since uftp8 is becoming to be more used than non-ASCII code and since we believe that is very important to have flask updated to be more compatible with what the clients want or need, we decide to implement this feature.
+We have chosen this feature because we think it is very important since uftp8 is becoming to be more used than non-ASCII code and since we believe that is very important to have flask updated to be more compatible with what the clients want or need, we decide to implement this feature.
 
 
 
 
 <a name="components"/>
-##Componets changed
+##Components changed
 
 <a name="evolution"/>
 ##Feature evolution
