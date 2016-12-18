@@ -125,12 +125,15 @@ Although there is no consensus on the part of project members and the community 
 
 After analyzing the project code and documentation, we found that the function that needed to be changed was the function send_file() that we then located with the help of the search functions of Atom in /flask/helpers.py.
 
-We started by creating the function is_ascii() that receives a string it will then see if all the characters in the string are ASCII encoded and if so it returns true if not it returns false. We choose to implement this auxiliary funtion instead of implement it inside send_file(), because this way it could be used in other parts of the project if needed.
+We started by creating the function is_ascii() that receives a string it will then see if all the characters in the string are ASCII encoded and if so it returns true if not it returns false. We choose to implement this auxiliary funtion instead of implement it inside send_file(), because this way it could be used in other parts of the project if needed later.
 
 Inside send_file() we check if the argument filename_or_fp is a string, because it can be a file pointer, if it is a string we then call our auxiliar function is_ascii() passing the filename_or_fp argument from send_file() if it returns false (meaning there is at least a non-ASCII characters in filename_or_fp) it gives a warning of type UnicodeWarning.
 
 <a name="pull"/>
 ##[Pull Request](https://github.com/pallets/flask/pull/2115)
+Our implementation for the feature was tested in the default flask's tests and passed all of them as it should.
+
+The pull request was made at 18:35 and passed the tests made and required by the main flask's contributors at 18:45 and is waiting to be merged into the main branch of the project.
 
 <a name="contribution"/>
 ##Group Contribution
