@@ -133,7 +133,7 @@ Inside send_file() we check if the argument filename_or_fp is a string, because 
 ##[Pull Request](https://github.com/pallets/flask/pull/2115)
 Our implementation for the feature was tested in the default flask's tests and passed all of them as it should.
 
-The pull request was made at 18:35 on 18/12/2016 and passed the tests made and required by the main flask's contributors at 18:45 on 18/12/2016 and is waiting to be merged into the main branch of the project.
+The pull request was made at 18:35 on 18/12/2016 and passed the tests made and required by the main flask's contributors at 18:45 on 18/12/2016 and is waiting to be merged into the main branch of the project. Link to the pull request is at the topic's title.
 
 <a name="contribution"/>
 ##Group Contribution
