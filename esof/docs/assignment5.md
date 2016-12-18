@@ -110,9 +110,9 @@ After some investigation of the test code implementation, we verified that ***ct
 
 Flask uses a function of Github named [issues tracker](https://github.com/pallets/flask/issues) where the community can propose new features to be added, as well as post bug fixes requests. So we decided to look for a feature there.
    
-After some discussion beetween the members of the group we decide to do the feature marked as issue[#1286](https://github.com/pallets/flask/issues/1286).
+After some discussion beetween the members of the group it was decided to do the feature marked as issue [#1286](https://github.com/pallets/flask/issues/1286).
 
-This feature has been choosen because it is very important since non-ASCII encode, in particular uft-8, is becoming a more used encoding than ASCII. As you can see in the graphic bellow the percentage of usage of ASCII encode is very small, around 0,1%.
+This feature has been choosen because it is important since non-ASCII encode, in particular uft-8, is becoming a more used encoding than ASCII. As the graphic bellow shows the percentage of usage of ASCII encode is very small, around 0,1%.
 
 Graph representing the usage of character encodings for websites <sup>1</sup>
 
@@ -121,13 +121,13 @@ Graph representing the usage of character encodings for websites <sup>1</sup>
 </p>
 
 
-Although there is no consensus on the part of project members and the community about how this situation should be resolved, the group decided to implement a way that didn't need a big code restructuring and followed what user [dsully](https://github.com/pallets/flask/issues/1286#issuecomment-223362859) that consists in sending a warning message when a non-ASCII filename is passed to the function send_file().
+Although there is no consensus on the part of project members and the community about how this situation should be resolved, the group decided to implement a way that didn't need a big code restructuring and followed what user [dsully](https://github.com/pallets/flask/issues/1286#issuecomment-223362859) reccomended, that consists in sending a warning message when a non-ASCII filename is passed to the function **send_file()**.
 
 After analyzing the project code and documentation, we found that the function that needed to be changed was the function send_file() that we then located in /flask/helpers.py.
 
-Has created a new function called  **is_ascii()** that receives a string it will then see if all the characters in the string are ASCII encoded and if so it returns true if not it returns false.Has decided to implement this auxiliary funtion instead of implement it inside send_file(), because this way it could be used in other parts of the project if needed later.
+Has created a new function called  **is_ascii()** that receives a string it will then see if all the characters in the string are ASCII encoded and if so it returns true if not it returns false.Has decided to implement this auxiliary funtion instead of implement it inside **send_file()**, because this way it could be used in other parts of the project if needed later.
 
-The function send_file() check if the argument filename_or_fp is a string, because it can be a file pointer, if it is a string then call our auxiliar function is_ascii() passing the filename_or_fp argument from send_file() if it returns false (meaning there is at least a non-ASCII characters in filename_or_fp) it gives a warning of type UnicodeWarning.
+Inside he function **send_file()** it's checked if the argument **filename_or_fp** is a string, because it can be a file pointer, if it is a string then call our auxiliar function **is_ascii()** passing the **filename_or_fp** argument from **send_file()** if it returns false (meaning there is at least one non-ASCII character in **filename_or_fp**) it gives a warning of type UnicodeWarning.
 
 <a name="pull"/>
 ##[Pull Request #2115](https://github.com/pallets/flask/pull/2115)
