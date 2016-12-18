@@ -1,7 +1,7 @@
 <p align="center">
    <img src=https://sigarra.up.pt/feup/pt/WEB_GESSI_DOCS.download_file?p_name=F-370784536/logo_cores_oficiais.jpg>
 </p>
-#**Software Maintance/Evolution**
+#**Software Maintenance/Evolution**
 
 ##**Integrated Masters in Informatics and Computer Engineering**
 
@@ -11,8 +11,8 @@
 ##**Index**
 1. [Introduction](#introduction)
 2. [Software Evolution and Maintenance](#Software Evolution and Maintenance)
-3. [Identification of feature](#identification)
-4. [Componets changed](#components)
+3. [Identification of the feature](#identification)
+4. [Components changed](#components)
 5. [Feature Evolution](#evolution)
 6. [Pull Request](#pull)
 7. [Group Contribution](#contribution)
@@ -20,15 +20,15 @@
 <a name="introduction"/>
 ##Introduction
 
-In software engineering, Software Maintance or Evolution is the process of improve and optimize the software. This phase happens when the software is already in use. Normally this step is taken to fix or prevent errors and implement new features required by users or the community.
+In software engineering, Software Maintenance and Evolution is the process of improve and optimize the software. This phase happens when the software is already in use and in order to fix or prevent errors and implement new features required by the stackholdes.
 
-During the software update its necessary to have in count what parts should be modified and why. Also, should ensure that  the changes doens't change the expected behaviour.
+During the software update becomes necessary to have in consideration what parts should be modified as well as the reasons. Also, the potential update should ensure that the changes doens't change the expected behaviour.
 
-The maintance of the software usually have costs, but since flask is an open source there are no costs.
+The maintenance of the software usually have costs, being a big part of the global cost of a software project. However, since **Flask** is an open source, the maintenance costs are are drasticly reduced, possibly having no real costs at all.
 
-One important aspect in an open source project is comunication between developers since the team is always changing to discuss the better way to improve the project.
+One important aspect in an open source project is the comunication between developers. Since the team is always changing keeping a good dialog, as well a very well documented  code is of extreme importance to help newcomers better understand the project. 
 
-Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implentment a new feature, since the identification of the feature until the pull request to the main project.
+Since flask is an open source project, there are multiple features that normaly are proposed by the community. This report has the purpose to show all the process to implement a new feature, since the identification of the feature until the pull request to the main project.
 
 
 [![BCH compliance](https://bettercodehub.com/edge/badge/rodavoce/flask)](https://bettercodehub.com)
